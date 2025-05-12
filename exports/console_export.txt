@@ -1,0 +1,84 @@
+GET /nasa_logs_jul95/_search
+{
+  "query": {
+    "term": {
+      "host": "199.72.81.55"
+    }
+  }
+}   
+
+# 5.1.2 - Requêtes avec code HTTP 404 (erreurs "Not Found")
+GET /nasa_logs_jul95/_search
+{
+  "query": {
+    "term": {
+      "status": 404
+    }
+  }
+}
+
+
+# 5.2.1 - Rechercher toutes les requêtes contenant "images"
+GET /nasa_logs_jul95/_search
+{
+  "query": {
+    "match": {
+      "request": "images"
+    }
+  }
+}
+
+
+# 5.2.2 - Rechercher tous les logs du 5 au 6 juillet 1995
+GET /nasa_logs_jul95/_search
+{
+  "query": {
+    "range": {
+      "timestamp": {
+        "gte": "1995-07-05T00:00:00",
+        "lte": "1995-07-06T23:59:59"
+      }
+    }
+  }
+}
+
+# 5.3.1 - Requêtes de l’IP 199.72.81.55 avec code 4xx ou 5xx
+GET /nasa_logs_jul95/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "term": { "host": "199.72.81.55" } }
+      ],
+      "filter": {
+        "range": {
+          "status": {
+            "gte": 400,
+            "lte": 599
+          }
+        }
+      }
+    }
+  }
+}
+
+
+# 5.4.1 - Nombre de requêtes par heure (agrégation temporelle)
+GET /nasa_logs_jul95/_search
+{
+  "size": 0,
+  "aggs": {
+    "requêtes_par_heure": {
+      "date_histogram": {
+        "field": "timestamp",
+        "calendar_interval": "hour",
+        "format": "yyyy-MM-dd HH:mm"
+      }
+    }
+  }
+}
+
+
+
+
+

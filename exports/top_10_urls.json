@@ -1,0 +1,66 @@
+{
+  "took": 667,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_urls": {
+      "doc_count_error_upper_bound": 16119,
+      "sum_other_doc_count": 1296928,
+      "buckets": [
+        {
+          "key": "/images/NASA-logosmall.gif",
+          "doc_count": 111388
+        },
+        {
+          "key": "/images/KSC-logosmall.gif",
+          "doc_count": 89639
+        },
+        {
+          "key": "/images/MOSAIC-logosmall.gif",
+          "doc_count": 60468
+        },
+        {
+          "key": "/images/USA-logosmall.gif",
+          "doc_count": 60014
+        },
+        {
+          "key": "/images/WORLD-logosmall.gif",
+          "doc_count": 59489
+        },
+        {
+          "key": "/images/ksclogo-medium.gif",
+          "doc_count": 58802
+        },
+        {
+          "key": "/images/launch-logo.gif",
+          "doc_count": 40871
+        },
+        {
+          "key": "/shuttle/countdown/",
+          "doc_count": 40279
+        },
+        {
+          "key": "/ksc.html",
+          "doc_count": 40232
+        },
+        {
+          "key": "/images/ksclogosmall.gif",
+          "doc_count": 33585
+        }
+      ]
+    }
+  }
+}

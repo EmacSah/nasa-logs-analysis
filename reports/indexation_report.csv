@@ -1,0 +1,8 @@
+fichier,documents,indexés,erreurs,temps_s,RAM_MB,CPU_%
+logs_batch_0.csv,300000,300000,0,216.12,631.1,0.0
+logs_batch_1.csv,300000,300000,0,219.89,629.97,0.0
+logs_batch_2.csv,300000,300000,0,218.61,624.55,52.6
+logs_batch_3.csv,300000,300000,0,217.69,629.68,0.0
+logs_batch_4.csv,300000,300000,0,215.62,610.72,60.0
+logs_batch_5.csv,300000,300000,0,213.58,631.5,0.0
+logs_batch_6.csv,91700,91700,0,65.29,546.77,0.0

@@ -1,0 +1,66 @@
+{
+  "took": 1,
+  "timed_out": false,
+  "_shards": {
+    "total": 3,
+    "successful": 3,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": {
+      "value": 10000,
+      "relation": "gte"
+    },
+    "max_score": null,
+    "hits": []
+  },
+  "aggregations": {
+    "top_ips": {
+      "doc_count_error_upper_bound": 7745,
+      "sum_other_doc_count": 3911219,
+      "buckets": [
+        {
+          "key": "piweba3y.prodigy.com",
+          "doc_count": 39108
+        },
+        {
+          "key": "piweba4y.prodigy.com",
+          "doc_count": 23802
+        },
+        {
+          "key": "piweba1y.prodigy.com",
+          "doc_count": 21393
+        },
+        {
+          "key": "alyssa.prodigy.com",
+          "doc_count": 18118
+        },
+        {
+          "key": "siltb10.orl.mmc.com",
+          "doc_count": 15146
+        },
+        {
+          "key": "piweba2y.prodigy.com",
+          "doc_count": 12812
+        },
+        {
+          "key": "edams.ksc.nasa.gov",
+          "doc_count": 11254
+        },
+        {
+          "key": "news.ti.com",
+          "doc_count": 10375
+        },
+        {
+          "key": "disarray.demon.co.uk",
+          "doc_count": 10223
+        },
+        {
+          "key": "163.206.89.4",
+          "doc_count": 9950
+        }
+      ]
+    }
+  }
+}
